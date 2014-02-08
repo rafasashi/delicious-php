@@ -27,7 +27,7 @@ class delicious{
 		if(!$response){
 			die('Error: "' . curl_error($this->curl) . '" - Code: ' . curl_errno($this->curl));
 		}
-		curl_close($this->curl);;		
+		curl_close($this->curl);		
 		return $response;
 	}
 
